@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700;1,800&display=swap");
 
 :root {
-  --color-black: #243e36;
+  --color-black: #15241f;
   --color-white: #fffae3;
   --color-grey: #cdb4db;
   --color-high-contrast: #af125a;
@@ -18,4 +18,100 @@
 }
 body {
   font-family: "Urbanist", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: var(--color-black);
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h1 span {
+  color: var(--color-high-contrast);
+}
+
+h2 {
+  color: var(--color-grey);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 4.2rem;
+}
+
+.menu-item ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-item ul li {
+  display: inline-block;
+  color: var(--color-low-contrast);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.menu-item ul li:first-child {
+  color: var(--color-high-contrast);
+}
+
+nav .notice {
+  background-color: var(--color-high-contrast);
+  text-align: center;
+  height: 1.6rem;
+}
+
+nav .notice p {
+  display: inline-block;
+  color: var(--color-white);
+  opacity: 80%;
+  margin-top: 0.2rem;
+}
+
+nav .notice span {
+  color: var(--color-black);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-image: url("https://images.pexels.com/photos/1523528/pexels-photo-1523528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 88vh;
+}
+
+.hero-text {
+  width: 40vw;
+  margin-left: 10vw;
+}
+
+.hero-text p {
+  width: 30vw;
+  text-align: justify;
+}
+
+hr {
+  border-top: 2px solid var(--color-high-contrast);
 }
