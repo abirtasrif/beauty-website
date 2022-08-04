@@ -24,6 +24,13 @@ body {
 .container {
   width: 80%;
 }
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
 /* ==================NAV & HERO================ */
 h1,
 h2,
@@ -148,16 +155,18 @@ nav .notice span {
 }
 
 .btn {
-  color: var(--color-high-contrast);
   font-size: 1.2rem;
   text-transform: uppercase;
-  border: 2px solid var(--color-high-contrast);
   padding: 0.5rem 1rem;
   display: inline-block;
   margin-top: 2rem;
 }
+.btn-primary {
+  color: var(--color-high-contrast);
+  border: 2px solid var(--color-high-contrast);
+}
 
-.hero-text a:hover {
+.hero-text .btn:hover {
   background-color: var(--color-high-contrast);
   color: var(--color-white);
   transition: var(--my-transition);
@@ -196,12 +205,6 @@ hr {
   margin: 0 auto;
 }
 
-.collections p {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2.5rem;
-}
-
 .collections .categories {
   display: flex;
   justify-content: space-between;
@@ -222,3 +225,12 @@ hr {
 }
 
 /* ===================ABOUT=================== */
+
+.about {
+  display: flex;
+}
+
+.btn-secondary {
+  color: var(--color-black);
+  border: 2px solid var(--color-black);
+}
