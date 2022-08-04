@@ -21,6 +21,10 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+.container {
+  width: 80%;
+}
+/* ==================NAV & HERO================ */
 h1,
 h2,
 h3,
@@ -55,6 +59,7 @@ h2 {
 h3 {
   font-size: 5rem;
   color: var(--color-white);
+  margin-left: -0.3rem;
 }
 
 h4 {
@@ -71,7 +76,6 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
   margin: 0 auto;
   height: 4.2rem;
 }
@@ -140,6 +144,7 @@ nav .notice span {
   text-align: justify;
   color: var(--color-white);
   margin-top: 0.7rem;
+  line-height: 1.2rem;
 }
 
 .btn {
@@ -164,3 +169,56 @@ nav .notice span {
 hr {
   border-top: 2px solid var(--color-high-contrast);
 }
+
+/* ===================COLLECTION=================== */
+.fans {
+  background-color: var(--color-high-contrast);
+  margin: 8rem auto;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0.8rem;
+  color: var(--color-white);
+}
+
+.fans p {
+  display: inline-block;
+  margin: 5rem 0 4rem 0;
+  font-size: 5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+.fans p span {
+  font-size: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+.collections {
+  margin: 0 auto;
+}
+
+.collections p {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.collections .categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+}
+
+.collections .categories li {
+  line-height: 1.4rem;
+  color: var(--color-black);
+  font-weight: 500;
+  opacity: 70%;
+}
+
+.collections .categories .category {
+  color: var(--color-high-contrast);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* ===================ABOUT=================== */
