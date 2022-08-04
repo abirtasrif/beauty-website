@@ -19,6 +19,7 @@
 }
 body {
   font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -228,9 +229,51 @@ hr {
 
 .about {
   display: flex;
+  justify-content: space-between;
+  margin-right: 10vw;
+  position: relative;
+}
+
+.about .photo-l {
+  width: 50%;
+  margin-top: 15rem;
+}
+
+.about .photo-l img {
+  filter: hue-rotate(324deg);
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+}
+
+.about .photo-h {
+  position: absolute;
+  right: -10rem;
+  top: 5rem;
+}
+.about .photo-h img {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.about .article {
+  margin-top: 50rem;
+  width: 28vw;
+}
+
+.about .article p {
+  text-align: justify;
 }
 
 .btn-secondary {
   color: var(--color-black);
   border: 2px solid var(--color-black);
+  font-weight: 500;
+}
+
+/* ===================BROWSE CARDS=================== */
+.title {
+  margin: 0 auto;
+}
+.cards {
+  margin: 0 auto;
 }
