@@ -101,10 +101,26 @@ h5 {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 600;
+  transition: var(--my-transition);
 }
 
 .menu-item ul li:first-child {
   color: var(--color-high-contrast);
+}
+
+.menu-item ul li:after {
+  margin-top: 2px;
+  width: 6px;
+  height: 3px;
+  display: block;
+  background-color: var(--color-grey);
+  content: "";
+  visibility: hidden;
+}
+.menu-item ul li:hover::after {
+  width: 100%;
+  content: "";
+  visibility: visible;
 }
 
 nav .notice {
@@ -380,4 +396,81 @@ h6 {
   color: var(--color-black);
   border: 2px solid var(--color-black);
   font-weight: 500;
+}
+/* ===================SUBSCRIPTION=================== */
+.subscription {
+  background-color: var(--color-high-contrast);
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  padding: 4rem 0;
+}
+
+.subscription p {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+input[type="email"] {
+  border-radius: 3px;
+  border: 2px solid var(--color-black);
+  height: 2rem;
+  width: 23rem;
+  padding-left: 1rem;
+}
+
+input[type="email"]::placeholder {
+  font-size: 1rem;
+  color: #504655;
+}
+
+#submit {
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.4rem 1rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+#submit:hover {
+  background-color: var(--color-low-contrast);
+  color: var(--color-black);
+}
+
+/* ===================FOOTER=================== */
+footer {
+  background-color: var(--color-black);
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer h1 {
+  scale: 0.8;
+}
+
+footer p {
+  color: var(--color-white);
+  letter-spacing: 0.1rem;
+}
+
+.uil {
+  color: var(--color-white);
+  font-size: 1.3rem;
+}
+.uil:last-child {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
 }
